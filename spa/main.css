@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --font-size-small: 2rem;
+    --font-size-normal: 2.2rem;
+    --font-size-medium: 2.8rem;
+    --font-size-medium-1: 3.6rem;
+    --font-size-large: 5.5rem;
+    --font-size-huge: 6.5rem;
+
+
+    --line-height-normal: 1.7;
+    --line-height-small: 1.2;
+
+    --black: #1C1C1C;
+    --grey: #303030;
+    --white: #f0e9f2;
+    --white-1: #e5e5e6da;
+    --green: #85FFE3;
+    --color-error: #a82323;
+    --dark-green: #122c24;
+
+
+    --container-max-width: 900px;
+    --container-normal-width: 700px;
+    --container-medium-width: 600px; 
+    --container-small-width: 400px;
+
+    --gutter-huge: 12rem;
+    --gutter-medium: 6rem;
+    --gutter-normal: 3rem;
+    --gutter-small-1: 2.5rem;
+    --gutter-small: 2rem;
+}
+
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    color: var(--white-1);
+    line-height: var(--line-height-normal);
+    background: var(--black);
+    overflow-x: hidden;
+}
+.row {
+    max-width: var(--container-max-width);
+    margin: 5% auto;
+}
+.container {
+    width: auto;
+    max-width: var(--container-medium-width);
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background:var(--grey);
+}
+
+.container,
+.table__button {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--white);
+}
+
+.table__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1% 1% 1% 1% 1%;
+    font-size: var(--font-size-small);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: var(--black);
+    color: var(--white);
+}
+
+
+
+.table__button {
+    width: 40%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    color: #ffffff;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--black);
+}
+
+
+.table__button:hover {
+    background: var(--dark-green);
+}
+
+.table__button:disabled{
+    background: var(--grey);
+}
+
+
+
+
+.hidden {
+
+  display: none;
+
+}
+
+.addStudTable {
+    border-collapse:collapse;
+    background:var(--grey);
+    width: 100%;
+   padding: 90 90 ;
+
+  }
+  
+  td {
+    border:none;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .lRow{
+      background:var(--dark-green);
+  }
+  .loginContainer {
+    
+    width: var(--container-medium-width);
+    max-width: var(--container-medium-width);
+    margin: 20% auto;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background:var(--grey);
+    
+}
+.login__input {
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+    padding: 0.75rem;
+    font-size: var(--font-size-small);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: var(--black);
+    color: var(--white);
+}
+.login__input:disabled{
+    background: var(--grey);
+}
+
+.addStudTableContainer {
+    
+    width: var(--container-medium-width);
+    max-width: var(--container-medium-width);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background: var(--grey);
+    
+    
+}
+.table__select {
+    
+
+    position: relative;
+    width: 100%;
+  }
+  
+  .table__select select {
+    width: 100%; 
+    padding:0.75rem 2rem;
+    
+    font-size: var(--font-size-small);
+    color: #ffffff;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--black);
+  }
+  .table__input__label{
+    width: 100%; 
+    padding:0.75rem 2rem;
+    font-size: var(--font-size-small);
+    color: #ffffff;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--black);
+  }
+
+  .headerContainer{
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    
+  }
+  .managContainer{
+    width: 45%;
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    
+  }
+
+  .tableStud{
+    border-collapse:collapse;
+    
+    background:var(--black);
+    width:auto + 20%;
+    margin: 2% auto;
+
+
+  }
+  .tableStud td{
+    
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  th{
+    background:var(--dark-green);
+    padding: 2rem;
+    border: thin solid white;
+  }
+
+  .insidetable__button{
+    width: 100%;
+   
+ 
+    font-size: var(--font-size-small);
+    color: #ffffff;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--black);
+  }
+  .stTd{
+      border: 1px solid white;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .stTr{
+    border: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+  .stTr.selected{
+      background: var(--dark-green);
+
+  }
+  .td.selected{
+      background: var(--dark-green);
+  }
+
+  .manage__button {
+    width: 40%;
+    padding: 1rem 2rem;
+    
+    font-size: var(--font-size-small);
+    color: #ffffff;
+    border: 1px solid #7a7a7a;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--black);
+}
+.staffContainer{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    
+}
+
+.logoutContainer{
+    width: 20%;
+    display: flex;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    
+}
+.logoutButton{
+    width: 100px;
+    padding: 1rem 2rem;
+    
+    font-size: var(--font-size-small);
+    color: #f06f6f;
+    border: 1px solid #7a7a7a;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--black);
+}
