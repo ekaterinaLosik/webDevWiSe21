@@ -8,7 +8,7 @@ const Staff = {
         </div>
         <div class="staffContainer" id="staffManagerContainer">
         <button type="button" class="table__button" name="students" id="displaystudents"
-            onclick="displayStudents()">Display Students</button>
+            onclick="showStudents('staff')">Display Students</button>
     </div>
     <div class="staffContainer" id="staffManagerContainer">
         <div class="table__select">
@@ -18,7 +18,10 @@ const Staff = {
             </select>
         </div>
     </div>
+    
+    <div id="stTableManagemt" class="managContainer"> </div>
 
+    <div id="stTable" class="studTableContainer"> </div>
 
     <div id="studentsTable">
 

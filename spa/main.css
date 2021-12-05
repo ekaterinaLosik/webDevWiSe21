@@ -101,6 +101,7 @@ body {
     outline: none;
     cursor: pointer;
     background: var(--black);
+    display: block;
 }
 
 
@@ -122,6 +123,8 @@ body {
 }
 
 .addStudTable {
+  border: none;
+
     border-collapse:collapse;
     background:var(--grey);
     width: 100%;
@@ -165,13 +168,14 @@ body {
 }
 
 .addStudTableContainer {
-    
+  border: none;
+
     width: var(--container-medium-width);
     max-width: var(--container-medium-width);
     margin: 5% auto;
     padding: 2rem;
     border-radius: var(--border-radius);
-    background: var(--grey);
+    background: var(--black);
     
     
 }
@@ -185,7 +189,6 @@ body {
   .table__select select {
     width: 100%; 
     padding:0.75rem 2rem;
-    
     font-size: var(--font-size-small);
     color: #ffffff;
     border: 1px solid var(--white);
@@ -208,54 +211,25 @@ body {
 
   .headerContainer{
     width: 30%;
-    display: block;
+    display: grid;
     margin: auto;
     padding: 2rem;
     border-radius: var(--border-radius);
+
+    justify-items: center;
+
     
   }
   .managContainer{
-    width: 45%;
-    display: flex;
+    width:85%;
+    display: grid;
     margin: auto;
     padding: 2rem;
     border-radius: var(--border-radius);
+    justify-items: center;
     
   }
 
-  .tableStud{
-    border-collapse:collapse;
-    
-    background:var(--black);
-    width:auto + 20%;
-    margin: 2% auto;
-
-
-  }
-  .tableStud td{
-    
-    padding: 0.5rem;
-    text-align: center;
-  }
-
-  th{
-    background:var(--dark-green);
-    padding: 2rem;
-    border: thin solid white;
-  }
-
-  .insidetable__button{
-    width: 100%;
-   
- 
-    font-size: var(--font-size-small);
-    color: #ffffff;
-    border: 1px solid var(--white);
-    border-radius: var(--border-radius);
-    outline: none;
-    cursor: pointer;
-    background: var(--black);
-  }
   .stTd{
       border: 1px solid white;
     padding: 0.5rem;
@@ -313,4 +287,63 @@ body {
     outline: none;
     cursor: pointer;
     background: var(--black);
+}
+
+table {
+  
+  border-collapse: collapse;
+  width:auto + 20%;
+  margin: 2% auto;
+}
+
+table td, table th {
+  border: 1px solid rgb(59, 59, 59);
+
+  padding: 8px;
+  text-align: center;
+}
+
+
+table tr:hover {background-color: rgb(43, 43, 43);}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0b1d18;
+  color: white;
+}
+
+table tr.selected{
+  background: var(--dark-green);
+
+}
+table td.selected{
+  background: var(--dark-green);
+}
+table th.selected{
+  background: var(--dark-green);
+}
+
+.tableStud{
+  border-collapse:collapse;
+  border: 1px solid rgb(59, 59, 59);
+
+  background:var(--black);
+  width:auto + 20%;
+  margin: 2% auto;
+
+
+}
+.tableStud td{
+  border: 1px solid rgb(59, 59, 59);
+
+  padding: 0.5rem;
+  text-align: center;
+}
+
+th{
+  background:var(--dark-green);
+  padding: 2rem;
+  border: thin solid white;
 }

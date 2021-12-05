@@ -7,7 +7,7 @@ const Admin = {
     
         </div>
             <div class="headerContainer"> 
-        <button type="button" class="table__button" name="students" id="students" onclick="showStudents()">Students</button> 
+        <button type="button" class="table__button" name="students" id="students" onclick="showStudents('admin')">Students</button> 
         <button type="button" class="table__button" name="staff" id="staff" onclick="showStaff()">Staff</button>
         </div>
         <div id="stTableManagemt" class="managContainer"> </div>
@@ -41,10 +41,9 @@ const Admin = {
             <tr>
                 <td class="lRow">Department*:</td>
                 <td><div class="table__select"><select name="department" id="department">
-                    <option value="department 1">Department 1</option>
-                    <option value="department 2">Department 2</option>
-                    <option value="department 3">Department 3</option>
-                    <option value="department 4">Department 4</option>
+                    <option value="Applied Science">Applied Science</option>
+                    <option value="Mathematics">Mathematics</option>
+                
                   </select></div></td>
             </tr>
             <tr>
@@ -53,10 +52,12 @@ const Admin = {
                 
             </tr>
             <tr>
-             
-                <td>&nbsp;</td>   <td><input type="submit" id="addRS" value="Add" class="table__button" onclick="addRowStud()"></td>
-            </tr>
-        </table>
+        <td class="lRow">Joining date:</td>
+        <td><input type="date" min="2015-01-01" class="table__input" id="jDateStud">
+        </td>
+    </tr>
+        </table>       <div class ="managContainer"> <input type="submit" id="addRS" value="Add" class="manage__button" onclick="addRowStud()"></div>   
+
     </div>
     
     <div class="addStudTableContainer hidden" id="addStaffTableContainer">
@@ -90,11 +91,11 @@ const Admin = {
             <td><input type="email" id="staffemail" class="table__input" required></td>
             
         </tr>
-        <tr>
-         
-            <td>&nbsp;</td>   <td><input type="submit" id="addRS" value="Add" class="table__button" onclick="addRowStaff()"></td>
-        </tr>
+        
+        
+        
     </table>
+    <input type="submit" id="addRS" value="Add" class="table__button" onclick="addRowStaff()">
 </div>
     
         `;
